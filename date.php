@@ -1,18 +1,19 @@
 <!--
  Template Hierarchy:
- - page.php (pages), single.php (posts), attachment.php (images,videos) -> default into singular.php
- - singular.php is not needed if you have page.php,single.php and attachmet.php.
- - Also not needed if is the same as index.php
+ - default page for date
+ - fall back to archive.php
 -->
 
 <?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
+      <h1><?php the_archive_title( ); ?></h1>
+
       <!-- starting the loop -->
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       
-        <?php get_template_part( 'template-parts/content', 'page' ); ?>
+        <?php get_template_part( 'template-parts/content-posts', get_post_format() ); ?>
       
       <?php endwhile; else:  ?> 
       
@@ -21,10 +22,11 @@
  
       <?php endif; ?>
       <!-- ending the loop -->
+      
+      <p>Template: date.php</p>
     
-      <p>Template: singular.php</p>
     </main>
   </div>
   
-<?php get_sidebar(); ?>
+<?php get_sidebar( ) ?>
 <?php get_footer(); ?>
