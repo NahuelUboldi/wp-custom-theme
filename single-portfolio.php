@@ -29,7 +29,7 @@
          </p>
 
          <p>
-          <a class="button" href="<?php the_field( 'url' ); ?>" target="_blank"><?php esc_html_e( 'Visit the project', 'wphierarchy' )?></a>
+          <a class="button" href="<?php the_field( 'url' ); ?>"><?php esc_html_e( 'Visit the project', 'wphierarchy' )?></a>
          </p>
 
         </div>
