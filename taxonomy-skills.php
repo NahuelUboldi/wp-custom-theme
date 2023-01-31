@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 <!--
  Template Hierarchy:
- - page for listing the custom post types
- - fall back to archive.php
+ - page for listing the custom taxonomies
 -->
   <div id="primary" class="content-area extended">
     <main id="main" class="site-main" role="main">
@@ -23,7 +22,7 @@
       <!-- ending the loop -->
       
       
-      <p>Template: archive-portfolio.php</p>
+      <p>Template: taxonomy-skills.php</p>
      </main>
   </div>
   
