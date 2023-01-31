@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 <!--
  Template Hierarchy:
- - it controls a single blog post
- - defaults into singular.php and into index.php
+ - page for custom post types
+ - fall back to archive.php
 -->
-  <div id="primary" class="content-area">
+  <div id="primary" class="content-area extended">
     <main id="main" class="site-main" role="main">
+
+      <h1><?php the_archive_title( ); ?></h1>
 
       <!-- starting the loop -->
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       
-        <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+        <?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
       
       <?php endwhile; else:  ?> 
       
@@ -19,10 +21,10 @@
  
       <?php endif; ?>
       <!-- ending the loop -->
+      
+      <p>Template: archive-portfolio.php</p>
     
-      <p>Template: single.php</p>
     </main>
   </div>
   
-<?php get_sidebar( ) ?>
 <?php get_footer(); ?>

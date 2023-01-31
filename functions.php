@@ -34,7 +34,7 @@ function wphierarchy_widgets_init() {
   'before_title' => '<h2 class="widget-title">',
   'after_title' => '</h2>'
  ] );
-  register_sidebar( [
+ register_sidebar( [
   'name' => esc_html__('Footer', 'wphiearchy'),
   'id' => 'footer',
   'description' => esc_html__( 'Add widgets for footer here', 'wphierarchy'),
@@ -43,11 +43,20 @@ function wphierarchy_widgets_init() {
   'before_title' => '<h2 class="widget-title">',
   'after_title' => '</h2>'
  ] );
-  register_sidebar( [
+ register_sidebar( [
   'name' => esc_html__('Page Sidebar', 'wphiearchy'),
   'id' => 'page-sidebar',
   'description' => esc_html__( 'Add widgets for page sidebar here', 'wphierarchy'),
   'before_widget' => '<section class="widget page-sidebar-widget">',
+  'after_widget' => '</section>',
+  'before_title' => '<h2 class="widget-title">',
+  'after_title' => '</h2>'
+ ] );
+ register_sidebar( [
+  'name' => esc_html__('Front Page Sidebar', 'wphiearchy'),
+  'id' => 'front-page-sidebar',
+  'description' => esc_html__( 'Add widgets for front-page sidebar here', 'wphierarchy'),
+  'before_widget' => '<section class="widget front-page-sidebar-widget">',
   'after_widget' => '</section>',
   'before_title' => '<h2 class="widget-title">',
   'after_title' => '</h2>'

@@ -1,10 +1,9 @@
+<?php get_header(); ?>
 <!--
  Template Hierarchy:
  - controls the pages
  - fall back into singular.php
  -->
-
-<?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 

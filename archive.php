@@ -1,10 +1,9 @@
+<?php get_header(); ?>
 <!--
  Template Hierarchy:
  - default page for the categories, tags, authors
  - fall back to index.php
 -->
-
-<?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 

@@ -1,10 +1,9 @@
+<?php get_header(); ?>
 <!--
  Template Hierarchy:
  - it controls the images
  - defaults into attachment.php
 -->
-
-<?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 

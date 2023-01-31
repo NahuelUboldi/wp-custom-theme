@@ -1,11 +1,10 @@
+<?php get_header(); ?>
 <!--
  Template Hierarchy:
  - page.php (pages), single.php (posts), attachment.php (images,videos) -> default into singular.php
  - singular.php is not needed if you have page.php,single.php and attachmet.php.
  - Also not needed if is the same as index.php
 -->
-
-<?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
